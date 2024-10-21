@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: blueviolet;
+  }
+  .container{
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .container header{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+  }
+  .container form{
+    margin: 40px 0 20px 0;
+  }
+  form input, form select, form button {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  form input{
+    height: 40px;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid grey;
+  }
+  form input:focus{
+    border: 2px solid #0083b0;
+  }
+  form .dropdown{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dropdown .select-container{
+    display: flex;
+    width: 130px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding:0px 0px 0px 20px;
+   
+    border: 1px solid gray;
+  }
+  option{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+  }
+  .select-container img{
+    max-width: 21px;
+  } 
+  .select-container select{
+    max-width: auto;
+    font-size: 17px;
+    background: none;
+    margin: 0 15px 0 5px;
+  }
+  .dropdown .icon{
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  form .exchange-rate{
+    border: 1px dotted gray;
+    border-radius: 5px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    margin: 20px 0 30px;
+  }
+  button{
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: blueviolet;
+   
+  }
+  button:hover{
+    background: rgb(107, 3, 204);
+    transition: all 0.5s;
+  
+  }
+  
+  @media (max-width: 700px){
+    
+  .container{
+    width: 360px;
+  }
+  .dropdown .select-container{
+    width: 120px;
+    height: 45px;
+  }
+
+}
